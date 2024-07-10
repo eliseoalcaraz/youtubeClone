@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/video.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>  
+        <img class="current-user-picture" src="channel-pictures/my-channel.jpg">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Orginals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=h3M4bm2EveM">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+              <div class="video-time">8:39</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@HaylsWorld"><img class="profile-picture" src="channel-pictures/channel-1.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-1.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      Hayls World
+                    </p>
+                    <p class="channel-subscribers">
+                      1.96M subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=h3M4bm2EveM" class="video-title-link">
+                <p class="video-title">  
+                  The Future of AI with 
+                  GOOGLE CEO (Sundar Pichai)
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@HaylsWorld" class="video-author-link">
+                <p class="video-author">
+                  Hayls World
+                </p>
+              </a>
+              <p class="video-stats">
+                268K views &#183; 1 month ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=17071s">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+              <div class="video-time">6:31:24</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@SuperSimpleDev"><img class="profile-picture" src="channel-pictures/channel-2.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-2.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      SuperSimpleDev
+                    </p>
+                    <p class="channel-subscribers">
+                      462K subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=17071s" class="video-title-link">
+                <p class="video-title">  
+                  HTML & CSS Full Course - 
+                  Beginner to Pro
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@SuperSimpleDev" class="video-author-link">
+                <p class="video-author">
+                  SuperSimpleDev
+                </p>
+              </a>
+              <p class="video-stats">
+                10M views &#183; 2 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=ho6Z62S2q9A">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+              <div class="video-time">10:54</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@BeastPhilanthropy/featured"><img class="profile-picture" src="channel-pictures/channel-3.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-3.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      Beast Philanthropy
+                    </p>
+                    <p class="channel-subscribers">
+                      25.3M subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=ho6Z62S2q9A" class="video-title-link">
+                <p class="video-title">  
+                  We Rebuilt a Village
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@BeastPhilanthropy/featured" class="video-author-link">
+                <p class="video-author">
+                  Beast Philanthropy
+                </p>
+              </a>
+              <p class="video-stats">
+                 5.1M views &#183; 3 days ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+              <div class="video-time">11:17</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@CSDojo"><img class="profile-picture" src="channel-pictures/channel-4.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-4.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      CS Dojo
+                    </p>
+                    <p class="channel-subscribers">
+                      1.94M subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" class="video-title-link">
+                <p class="video-title">  
+                  Kadane's Algorithm to Maximum 
+                  Sum Subarray Problem
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@CSDojo" class="video-author-link">
+                <p class="video-author">
+                  CS Dojo
+                </p>
+              </a>
+              <p class="video-stats">
+                697K views &#183; 8 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=PZSIPNsjIxc">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+              <div class="video-time">26:13</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@CongTheVlogger"><img class="profile-picture" src="channel-pictures/channel-5.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-5.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      Cong TV
+                    </p>
+                    <p class="channel-subscribers">
+                      11.9M subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=PZSIPNsjIxc" class="video-title-link">
+                <p class="video-title">  
+                  WAKAS
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@CongTheVlogger" class="video-author-link">
+                <p class="video-author">
+                  Cong TV
+                </p>
+              </a>
+              <p class="video-stats">
+                2.6M views &#183; 5 days ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=XgABnoJLtG4">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+              <div class="video-time">11:57</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@nesoacademy"><img class="profile-picture" src="channel-pictures/channel-6.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-6.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      Neso Academy
+                    </p>
+                    <p class="channel-subscribers">
+                      2.57M subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=XgABnoJLtG4" class="video-title-link">
+                <p class="video-title">  
+                  Reverse a Single Linked List
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@nesoacademy" class="video-author-link">
+                <p class="video-author">
+                  Neso Academy
+                </p>
+              </a>
+              <p class="video-stats">
+                246K views &#183; 3 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=2XVcLrB7B3Y">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
+              <div class="video-time">2:37</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@MrBeast"><img class="profile-picture" src="channel-pictures/channel-7.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-7.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      MrBeast
+                    </p>
+                    <p class="channel-subscribers">
+                      300M subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=2XVcLrB7B3Y" class="video-title-link">
+                <p class="video-title">  
+                  Worst Minecraft Saw Trap Ever???
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@MrBeast" class="video-author-link">
+                <p class="video-author">
+                  MrBeast
+                </p>
+              </a>
+              <p class="video-stats">
+                24M views &#183; 12 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=b9eMGE7QtTk">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
+              <div class="video-time">1:11:44</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@javascriptmastery"><img class="profile-picture" src="channel-pictures/channel-8.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-8.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      JavaScript Mastery
+                    </p>
+                    <p class="channel-subscribers">
+                      886K subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=b9eMGE7QtTk" class="video-title-link">
+                <p class="video-title">  
+                  React JS Full Course 2023 | 
+                  Build an App and Master React in 1 Hour
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@javascriptmastery" class="video-author-link">
+                <p class="video-author">
+                  JavaScript Mastery
+                </p>
+              </a>
+              <p class="video-stats">
+                1.5M views &#183; 2 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ&t=144s">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-9.webp">
+              <div class="video-time">22:15:57</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@SuperSimpleDev"><img class="profile-picture" src="channel-pictures/channel-9.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-9.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      SuperSimpleDev
+                    </p>
+                    <p class="channel-subscribers">
+                      462K subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ&t=144s" class="video-title-link">
+                <p class="video-title">  
+                  JavaScript Tutorial Full Course - 
+                  Beginner to Pro (2024)
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@SuperSimpleDev" class="video-author-link">
+                <p class="video-author">
+                  SuperSimpleDev
+                </p>
+              </a>
+              <p class="video-stats">
+                815K views &#183; 2 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=XB4MIexjvY0">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-10.webp">
+              <div class="video-time">18:35</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@abdul_bari"><img class="profile-picture" src="channel-pictures/channel-10.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-10.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      Abdul Bari
+                    </p>
+                    <p class="channel-subscribers">
+                      988K subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=XB4MIexjvY0" class="video-title-link">
+                <p class="video-title">  
+                  3.6 Dijkstra Algorithm - Single 
+                  Source Shortest Path - Greedy Method
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@abdul_bari" class="video-author-link">
+                <p class="video-author">
+                  Abdul Bari
+                </p>
+              </a>
+              <p class="video-stats">
+                3.4M views &#183; 6 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=Mdd5dBHQhyc">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-11.webp">
+              <div class="video-time">16:06</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@RiceSquad"><img class="profile-picture" src="channel-pictures/channel-11.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-11.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      Rice Squad
+                    </p>
+                    <p class="channel-subscribers">
+                      256K subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=Mdd5dBHQhyc" class="video-title-link">
+                <p class="video-title">  
+                  Guess the REAL Filipino!
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@RiceSquad" class="video-author-link">
+                <p class="video-author">
+                  Rice Squad
+                </p>
+              </a>
+              <p class="video-stats">
+                1.8M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=BqSxjmvXzzY">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-12.webp">
+              <div class="video-time">4:36</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel">
+                <a href="https://www.youtube.com/@facts"><img class="profile-picture" src="channel-pictures/channel-12.jpeg"></a>
+                <div class="channel-tooltip">
+                  <div>
+                    <img class="channel-picture-tooltip" src="channel-pictures/channel-12.jpeg">
+                  </div>
+                  <div class="channel-info">
+                    <p class="channel-author">
+                      Facts.
+                    </p>
+                    <p class="channel-subscribers">
+                      1.8M subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=BqSxjmvXzzY" class="video-title-link">
+                <p class="video-title">  
+                  57 Years Apart - A Boy And 
+                  a Man Talk About Life
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@facts" class="video-author-link">
+                <p class="video-author">
+                  Facts.
+                </p>
+              </a>
+              <p class="video-stats">
+                33M views &#183; 8 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
